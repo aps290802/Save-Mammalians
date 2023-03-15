@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="open">
+    <div class="layer"></div>
+    <div class="layer"></div>
+  </div>
+    <section class="section1">
+      <div class="header">
+       <h2 class="Logo">Save Mammalians!</h2>
+       <ul>
+        <li>
+          <a href="#" class="active" >Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Our Services</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#contact" > Contact</a>
+        </li>
+        <li>
+          <button id="Login-show">Login</button>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="bannertext">
+      <h2>Let's End</h2>
+      <h3>Cruelty for all animals.</h3>
+      <p>Animal welfare is a growing concern in India, with a growing number of organizations working to protect the rights and well-being of animals in the country. India is home to a rich and diverse array of wildlife, including tigers, elephants, monkeys, and many other species. These animals play a critical role in maintaining the country's natural balance, and it is important that their welfare is protected.</p>
+      <a href="Javascript:void();" class="readmore_btn">Read More.....</a>
+    </div>
+    <img src="bulb.jpg" alt="bulb" class="bulb">
+    <ul class="sci">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+   
+  </section>
+
+
+
+
+
+  <div id="login-model">
+      <div class="model">
+          <div class="top-form">
+              <div class="close-model">
+                  &#10006;
+              </div>
+          </div>
+          <div class="login-form">
+              <h2>Login with Email</h2>
+              <form action="">
+                  <input type="text"class = 'form-control' placeholder="Email">
+                  <input type="Password" class = "form-control" placeholder="Password">
+                  
+                  <input type="submit" value="Login" >
+                  <span></span>
+                  <p>Not registered ? <a href="#" class="create">Create an Account</a></p>
+              </form>
+          </div>
+      </div>
+  </div>
+
+  <script type="text/javascript">
+      $(function(){
+          $('#Login-show').click(function(){
+             $('#login-model').fadeIn().css("display","flex");
+          });
+
+          $('.close-model').click(function(){
+             $('#login-model').fadeOut().css("display","flex");
+          });
+      });
+      
+  </script>
+ 
+
+</body>
+</html>
